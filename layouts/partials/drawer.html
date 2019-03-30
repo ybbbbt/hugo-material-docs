@@ -55,10 +55,18 @@
           </li>
           {{ end }}
 
-          {{ with .Site.Social.github }}
+          <!-- {{ with .Site.Social.github }}
           <li>
             <a href="https://github.com/{{ . }}" target="_blank" title="@{{ . }} on GitHub">
               @{{ . }} on GitHub
+            </a>
+          </li>
+          {{ end }} -->
+
+          {{ with .Site.Social.github }}
+          <li>
+            <a href="https://github.com/zju3dv/eval-vislam" target="_blank" title="Evaluation Toolkit on GitHub">
+              Evaluation Toolkit on GitHub
             </a>
           </li>
           {{ end }}
