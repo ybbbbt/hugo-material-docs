@@ -1,20 +1,31 @@
 <nav aria-label="Navigation">
   <a href="{{ with .Site.Params.repo_url }}{{ . }}{{ else }}{{ .Site.BaseURL }}{{ end }}" class="project">
-    <div class="banner">
-      {{ with .Site.Params.logo }}
-        <div class="logo">
-          <img src="{{ $.Site.BaseURL }}{{ . }}">
-        </div>
-      {{ end }}
-      <div class="name">
-        <strong>{{ .Site.Title }} {{ with .Site.Params.version }}<span class="version">{{ . }}</span>{{ end }}</strong>
-        {{ with .Scratch.Get "repo_id" }}
-          <br>
-          {{ . }}
-        {{ end }}
+      
+      <div class="custom_logo" align="center">
+          <img src="sensetime_zju_logo.png" width=200px height=78px />
       </div>
-    </div>
-  </a>
+      <center>
+      <br>
+      <div class="name" style="text-align:center">
+        <strong>ZJU - SenseTime<br>VISLAM Benchmark</strong>
+      </div>
+    </center>
+
+    <!-- <div class="banner">
+        {{ with .Site.Params.logo }}
+          <div class="logo">
+            <img src="{{ $.Site.BaseURL }}{{ . }}">
+          </div>
+        {{ end }}
+        <div class="name">
+          <strong>{{ .Site.Title }} {{ with .Site.Params.version }}<span class="version">{{ . }}</span>{{ end }}</strong>
+          {{ with .Scratch.Get "repo_id" }}
+            <br>
+            {{ . }}
+          {{ end }}
+        </div>
+    </div> -->
+  <!-- </a> -->
 
   <div class="scrollable">
     <div class="wrapper">
