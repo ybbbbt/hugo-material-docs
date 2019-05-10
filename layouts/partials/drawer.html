@@ -2,7 +2,7 @@
   <a href="{{ with .Site.Params.repo_url }}{{ . }}{{ else }}{{ .Site.BaseURL }}{{ end }}" class="project">
       
       <div class="custom_logo" align="center">
-          <img src="sensetime_zju_logo.png" width=200px height=78px />
+          <img src="{{ $.Site.BaseURL }}/sensetime_zju_logo.png" width=200px height=78px />
       </div>
       <center>
       <br>
