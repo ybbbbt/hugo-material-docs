@@ -12,6 +12,8 @@
     <title>{{ .Title }}{{ if not .IsHome }} - {{ .Site.Title }}{{ end }}</title>
     {{ hugo.Generator }}
 
+    {{ template "_internal/google_analytics_async.html" . }}
+
     {{ with .Site.Params.description }}
     <meta name="description" content="{{ . }}">
     {{ end }}
